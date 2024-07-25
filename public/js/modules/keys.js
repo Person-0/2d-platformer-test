@@ -2,7 +2,7 @@ export default class Keys {
     constructor (element) {
         element.addEventListener("keydown", ({key})=>{
             let k = key.toLowerCase()
-            if(k == " "){k == "space"}
+            if(k == " "){k = "space"}
             if(!(this.keys.includes(k))) {this.keys.push(k)}
             if(this.events[k]){
                 this.events[k].map(e=>{e(true)})
@@ -10,7 +10,7 @@ export default class Keys {
         })
         element.addEventListener("keyup", ({key})=>{
             let k = key.toLowerCase()
-            if(k == " "){k == "space"}
+            if(k == " "){k = "space"}
             this.keys = this.keys.filter(_k => { return !(k === _k) })
             if(this.events[k]){
                 this.events[k].map(e=>{e(false)})
