@@ -9,7 +9,7 @@
   "keywords": [
     "2d platformer test"
   ],
-  "author": "BluZed",
+  "author": "Person-0",
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2"
